@@ -1,0 +1,80 @@
+
+
+h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+
+#orderForm {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+
+#diaChi {
+ width: calc(100% - 20px);
+ padding: 10px;
+ margin-bottom: 15px;
+ border: 1px solid #ddd;
+ border-radius: 5px;
+}
+#ten_nguoiDung{
+width: calc(100% - 20px);
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #ddd;
+border-radius: 5px;
+}
+#soDienThoai{
+ width: calc(100% - 20px);
+ padding: 10px;
+ margin-bottom: 15px;
+ border: 1px solid #ddd;
+ border-radius: 5px;
+}
+#ma_giamGia{
+ width: calc(100% - 20px);
+ padding: 10px;
+ margin-bottom: 15px;
+ border: 1px solid #ddd;
+ border-radius: 5px;
+}
+#hidden {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+input[type="hidden"] {
+  display: none;
+}
+
+button.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #f37f19;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button.submit-btn:hover {
+  background-color: #ed903f;
+}

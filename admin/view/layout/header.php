@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?=$baseUrl?>/asset/css/style.css">
+    <link rel="stylesheet" href="<?=$baseUrl?>//asset/css/product.css">
     <script src="https://www.gstatic.com/charts/loader.js"></script>
     <title>Admin TechZone</title> 
 </head>
@@ -20,7 +21,7 @@
 
         <div class="menu-items">
             <ul class="nav-links">
-                <li><a href="#">
+                <li><a href="<?=$baseUrl?>/?mod=order&act=order">
                     <i class="uil uil-estate"></i>
                     <span class="link-name">Quản lý đơn hàng</span>
                 </a></li>
@@ -28,7 +29,7 @@
                     <i class="uil uil-files-landscapes"></i>
                     <span class="link-name">Quản lý khách hàng</span>
                 </a></li>
-                <li><a href="<?=$baseUrl?>/?mod=chart&act=chart">
+                <li><a href="<?=$baseUrl?>/?mod=page&act=home">
                     <i class="uil uil-chart"></i>
                     <span class="link-name">Báo cáo thống kê</span>
                 </a></li>
@@ -36,7 +37,7 @@
                     <i class="uil uil-thumbs-up"></i>
                     <span class="link-name">Quản lý danh mục</span>
                 </a></li>
-                <li><a href="#">
+                <li><a href="<?=$baseUrl?>/?mod=product&act=admin_product">
                     <i class="uil uil-comments"></i>
                     <span class="link-name">Quản lý sản phẩm</span>
                 </a></li>
@@ -47,7 +48,7 @@
             </ul>
             
             <ul class="logout-mode">
-                <li><a href="#">
+                <li><a href="http://localhost/Project1_Group-TechZone/index.php">
                     <i class="uil uil-signout"></i>
                     <span class="link-name">Logout</span>
                 </a></li>
@@ -69,10 +70,10 @@
         <div class="top">
             <i class="uil uil-bars sidebar-toggle"></i>
             <!-- <form method="GET" action="?mod=cate&act=search"> -->
-            <div class="search-box">
+            <!-- <div class="search-box">
                 <i class="uil uil-search"></i>
                 <input type="text" name="keyword" placeholder="Search here..."value=<?=$_GET['keyword'] ?? ''?>>  
-                <button type="submit" class="search-btn">Search</button>
+                <button type="submit" class="search-btn">Search</button> -->
             </div>
         </div>
         <!-- </form> -->

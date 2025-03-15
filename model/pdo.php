@@ -1,5 +1,6 @@
 <?php
 // Kết nối đến CSDL sử dụng PDO
+
 function pdo_connect(){
     $servername="localhost:3307";
     $database="techzone";
@@ -8,7 +9,6 @@ function pdo_connect(){
     try{
         $conn = new PDO("mysql:host=$servername;dbname=$database;charset=utf8", $username, $password);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        echo("Kết nối thành công");
         return $conn;
     }
     catch(PDOException $e) {
@@ -96,4 +96,16 @@ function pdo_getValue($sql){
     finally{
         unset($conn);
     }
+}
+function get_danhmuc() {
+    $conn = pdo_connect();
+    $sql = "SELECT * FROM danhmuc";
+    $stmt = $conn->query($sql);
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+function get_thuongHieu() {
+    $conn = pdo_connect();
+    $sql = "SELECT * FROM thuonghieu ORDER BY ten_thuongHieu";
+    $stmt = $conn->query($sql);
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }

@@ -1,0 +1,202 @@
+/* Tổng quan */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+.container, header, form, table {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+/* Nút hành động */
+button, input[type="submit"], .btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+button:hover, input[type="submit"]:hover, .btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+}
+
+
+/* Bảng */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+table th {
+    background-color: #f0f0f0;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+/* Ảnh */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input, form select, form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input[type="file"] {
+    padding: 5px;
+}
+
+/* Badge trạng thái */
+.badge {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.badge.text-bg-secondary {
+    background-color: #6c757d;
+}
+
+/* Tìm kiếm */
+header input[type="text"] {
+    width: calc(100%);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+form input[type="text"] {
+    width: calc(100%);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+header input[type="submit"] {
+    width: 100px;
+    margin-left: 10px;
+}
+
+/* Phân trang */
+td a {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 5px;
+    display: flex;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+/* Form thêm sản phẩm */
+.themsanpham {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    width: 170px;
+    height: 50px;
+    white-space: nowrap;
+
+}
+.themsanpham :hover {
+    background-color: #0056b3;
+}
+/* Nút hành động trong bảng */
+.table{
+    display: inline-block;
+    margin: 5px 2px;
+}
+.status {
+    display: inline-block; /* Hiển thị như một box */
+    padding: 5px 10px; /* Thêm khoảng cách trong box */
+    border-radius: 5px; /* Bo tròn góc box */
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.status.gio-hang {
+    background-color: #ffcccc; /* Màu đỏ nhạt */
+    color: #a94442; /* Màu chữ đỏ đậm */
+}
+
+.status.cho-van-chuyen {
+    background-color: #ffeeba; /* Màu vàng nhạt */
+    color: #856404; /* Màu chữ vàng đậm */
+}
+
+.status.dang-van-chuyen {
+    background-color: #cce5ff; /* Màu xanh nhạt */
+    color: #004085; /* Màu chữ xanh đậm */
+}
+
+.status.da-van-chuyen {
+    background-color: #d4edda; /* Màu xanh lá nhạt */
+    color: #155724; /* Màu chữ xanh lá đậm */
+}

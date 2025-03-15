@@ -1,6 +1,18 @@
 <div class="category-management">
   <header>
     <h2>Danh mục <?=$category_id?></h2>
+    <form method="POST" action="?mod=&act=updateCate&id=<?= $category_id; ?>">
+      <div class="form-group">
+        <label for="category_name">Tên danh mục:</label>
+        <input type="text" id="category_name" name="category_name" value="<?= htmlspecialchars($category_name); ?>" required>
+      </div>
+      <div class="form-group">
+        <label for="category_code">Mã danh mục:</label>
+        <input type="text" id="category_code" name="category_code" value="<?= $category_id?>" required>
+      </div>
+      <button type="submit" class="btn-submit">Cập nhật danh mục</button>
+    </form>
+
   </header>
   <div class="category-table">
     <table>
@@ -34,10 +46,12 @@
                 ?></td>
               <td><?=$trangThai?></td>
               <td>
-                <!-- <a href="?mod=detailCate&act=edit&product_id=<?= $product['id']; ?>">
-                  <button class="edit-btn" id="edit-btn">Sửa</button>
-                </a> -->
-                <!-- <button class="delete-btn" id="delete-btn" onclick="deleteProduct(<?= $category_id; ?>)">Xóa</button> -->
+                <a href="?mod=product&act=edit&id=<?= $product['ma_sanPham'];?>">
+                  <button >Sửa</button>
+                </a>
+                <a href="?mod=product&act=delete&id=<?=$product['ma_sanPham'];?>">
+                 <button  id="delete-btn" onclick="deleteProduct(<?= $product; ?>)">Xóa</button>
+                </a>
                 </td>
             </tr>
           <?php endforeach; ?>

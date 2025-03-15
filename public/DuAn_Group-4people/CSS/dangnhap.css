@@ -313,107 +313,108 @@ animation: burst 2s ease-out infinite;
 }
 /* Đăng nhập */
 .form_dang_nhap_2{
-    width: 65%;
-    margin: 0px auto;
-    padding: 2rem 0;
-    margin-top: 60px;
-    display: flex;
-    gap: 20px;
-  }
-  .form_dang_nhap_2 .banner_login{
-    max-height: 370px;
-    justify-content: center;
-    align-items: center;
-  }
-  .form_dang_nhap_2 form {
-    background-color: rgb(235, 241, 205);
-    margin: auto;
-    max-width: 400px;
-    padding: 20px;
-    border-radius: 5px;
-    font-family: Arial, sans-serif;
-  }
-  
-  .form_dang_nhap_2 h2 {
-    margin-top: 0;
-    font-size: 24px;
-    text-align: center;
-  }
-  .form_dang_nhap_2 input[type="email"],
-  .form_dang_nhap_2 input[type="password"] {
-    width: 100%;
-    padding: 10px 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-top: 10px;
-  }
-  
-  .form_dang_nhap_2 a:not(.dang_ki,.social-login a) {
-    color: #007bff;
-    text-decoration: none;
-    display: block;
-    margin-top: 10px;
-  }
-  .form_dang_nhap_2 a:hover {
-    color: #f02757;
-  }
-  .form_dang_nhap_2 .dang_ki:hover{
-    color: #f02757;
-    text-decoration: none;
-  }
-  
-  .or {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .quen_mat_khau{
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .social-login {
-    text-align: center;
-  }
-  .social-login a {
-    width: 33.3333333%;
-    display: inline-block;
-    background-color: #e4e4e4;
-    padding: 10px;
-    border-radius: 5px;
-    margin: 0 5px;
-    transition: background-color 0.3s ease;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-  }
-  .social-login a:hover{
-    text-decoration: none;
-    color: #007bff;
-  }
-  
-  .form_dang_nhap_2 input[type="submit"] {
-    width: 100%;
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    margin-top: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .form_dang_nhap_2 input[type="submit"]:hover {
-    background-color: #0056b3;
-  }
-  .form_dang_nhap_2 div{
-    display: flex;
-   justify-content: center;
-  }
+  display: flex;
+  width: 75%;
+  margin: 0px auto;
+  margin-top: 50px;
+  padding: 2rem 0;
+  flex: auto;
+}
+/* Phần hình*/
+.hinhform{
+  width: 800px;
+  flex: auto;
+  justify-content: center; 
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+.form_dang_nhap_2 form {
+  flex: auto;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  margin-left: 10px;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 25px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.form_dang_nhap_2 h2 {
+  margin-top: 0;
+  font-size: 24px;
+  text-align: center;
+}
+.form_dang_nhap_2 input[type="email"],
+.form_dang_nhap_2 input[type="password"] {
+  text-align: center;
+  width: 70%;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.form_dang_nhap_2 a:not(.dang_ki,.social-login a) {
+  color: #007bff;
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+}
+.form_dang_nhap_2 a:hover {
+  color: #f02757;
+}
+.form_dang_nhap_2 .dang_ki:hover{
+  color: #f02757;
+  text-decoration: none;
+}
+.or {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.quen_mat_khau{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.social-login {
+  text-align: center;
+}
+.social-login a {
+  text-decoration: none;
+  width: 33.3333333%;
+  display: inline-block;
+  background-color: #e4e4e4;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+  color: rgb(0, 0, 0);
+}
+.social-login a:hover{
+  text-decoration: none;
+  color: #007bff;
+}
+.form_dang_nhap_2 input[type="submit"] {
+  width: 50%;
+  background-color: #ff8400;
+  color: #fff;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.form_dang_nhap_2 input[type="submit"]:hover {
+  background-color: #ffb300;
+}
+.form_dang_nhap_2 div{
+  display: flex;
+ justify-content: center;
+}
 
  /* Phần Footer-------------- */
  /* ----------footer------------------------- */
